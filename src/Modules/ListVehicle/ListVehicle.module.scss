@@ -1,0 +1,44 @@
+@import '../../utils/mixins.scss';
+
+.container {
+  background-color: #272838;
+  display: grid;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.title {
+  text-align: center;
+  padding-block: 24px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 24px;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  padding-block: 24px;
+  gap: 20px;
+
+  @include on-phone {
+    flex-direction: column;
+  }
+}
+
+.serch {
+  padding: 10px 16px;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #fff;
+  background-color: #272838;
+  color: #fff;
+}
+
+.optionTitle {
+  text-transform: uppercase;
+  color: #fff;
+  padding-bottom: 10px;
+}
+

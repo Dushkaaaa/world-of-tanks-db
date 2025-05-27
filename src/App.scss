@@ -1,3 +1,20 @@
-.starter {
-  font-size: 18px;
+@import './utils/mixins.scss';
+
+iframe {
+  display: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  background-color: #272838;
+  min-height: calc(100vh + 100%);
+  padding-inline: 180px;
+
+  @include on-phone {
+    padding-inline: 40px;
+  }
 }

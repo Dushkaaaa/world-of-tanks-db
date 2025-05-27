@@ -1,0 +1,22 @@
+@import '../../../../utils/mixins.scss';
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+
+  @include on-phone {
+    // display: block;
+  }
+}
+
+.title {
+  color: #fff;
+
+  @include on-phone {
+    padding-bottom: 20px;
+    font-size: 24px;
+  }
+}

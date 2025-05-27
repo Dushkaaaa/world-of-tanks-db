@@ -1,0 +1,5 @@
+@mixin on-phone {
+  @media (max-width: 640px) {
+    @content;
+  }
+}

@@ -1,0 +1,23 @@
+@import '../../../../utils/mixins.scss';
+
+.list {
+  list-style: none;
+
+  display: flex;
+  gap: 20px;
+
+  @include on-phone {
+    flex-direction: column;
+  }
+}
+
+.link {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+
+  @include on-phone {
+    font-size: 16px;
+  }
+}
